@@ -11,13 +11,12 @@ const employees = [
 
 
 function providedSalary(employees) {
-    const Days = 30;
     let sum = 0;
     for (const employe of employees) {
         const calculatedSalary = (employe.increment * employe.experience) + employe.starting;
         sum+=calculatedSalary;
     }
-    return sum*Days;
+    return sum
 
 }
 const result = providedSalary(employees);
